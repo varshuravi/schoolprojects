@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand img{
+    height: 40px;
+}
+
+.active{
+    color: blue;
+    font-weight: bold;
+    border-bottom: 3px solid blue;
+}
+.navbar{
+    border-bottom: 1px solid lightgray;
+}
+.footer{
+    border-top: 1px solid lightgray;
+}
+#dob{
+    text-transform: uppercase;
+}
+.error{
+    color: red;
+}
+@media (min-width: 320px) and (max-width: 490px) { 
+
+    #firstName,#lastName,#motherName,#gaurdian,#email,#studentClass,#address,#dob,#checkboxContent,#resultTable{
+        margin-bottom: 25px;
+    }
+}

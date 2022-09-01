@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand img{
+height: 40px;
+}
+.card-image{
+    height: 250px;
+}
+.nav-link{
+    color: black;
+}
+.active{
+    color:white;
+    font-weight: bold;
+    border-bottom: 5px solid white;
+}
+.card{
+    border-radius: 20px;
+}
+.bg-light{
+    border-bottom: 6px solid lightgray;
+}
+.container-fluid{
+    margin-bottom: 20px;
+}
+.error{
+    color: red;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Teachers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/teacherslist.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" alt="logo"
+                    class="d-inline-block align-text-top ms-5 nav-image"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link   dropdown-toggle text-black" href="Teacher.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Teachers
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-black" href="teacherslist.html">Teachers</a></li>
+                        <li><a class="dropdown-item text-black" href="createteachers.html">Create a Teachers</a></li>
+                    </ul>
+                    <li class="nav-item">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link   dropdown-toggle text-black" href="Student.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Students
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-black" href="studentlist.html">Students</a></li>
+                        <li><a class="dropdown-item text-black" href="createstudent.html">Create a Students</a></li>
+                    </ul>
+                    <li class="nav-item">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link   dropdown-toggle text-black" href="Worker.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Workers
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-black" href="workerslist.html">Workers</a></li>
+                        <li><a class="dropdown-item text-black" href="createworkers.htmls">Create a Workers</a></li>
+                    </ul>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="/HTML/sign_in.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section>
+        
+    <div class="container mt-2">
+        <span class="fw-bold ms-1 mb-4.0 ms-3.0"><h4>Students List</span>
+      <button type="button"class="btn btn-primary float-end mt-0 button me-14">
+        <a class="text-white nav-link" href="/Html/teacherslist.html">Back</a></button>
+    </div>
+        <div class="row mt-5 mb-2">
+            <div class=" col-md-10 col-sm-12 ms-auto me-auto bg-muted">
+                <div class="row">
+                    <input type="hidden" id="new" value="">
+                    <div class="col-md-4">
+                        <input type="text" id="fname" class="form-control form-control-lg mb-1" placeholder="First Name" />
+                    </div>
+                    <div class="col-md-4 ">
+                        <input type="text" id="lname" class="form-control form-control-lg mb-3" placeholder="Last Name" />
+                    </div>
+                    <div class="col-md-4 ">
+                        <input type="text"  id="mobile" class="form-control form-control-lg mb-3" placeholder="Mobile" />
+                    </div>
+                  
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" id="email" class="form-control form-control-lg mb-3" placeholder="E-mail" />
+                    </div>
+                    <div class="col-md-4 ">
+                        <input type="text"  id="age"class="form-control form-control-lg mb-3" placeholder="Age" />
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" id="nativeplace" class="form-control form-control-lg mb-3" placeholder="Nativeplace " />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <div class="form-group">
+                        <textarea type="text" class="form-control" placeholder="Address" id="address" class="smDivice"></textarea>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="">Gender</label>
+                        <div class="radio" id="gender" class="smDivice"><br>
+                           <input type="radio" class="Gender" name="Gender" value="Male"> Male</label>
+                            <label><input type="radio" class="Gender" name="Gender" value="Female"> Female</label>
+                            <div class="errormessage"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="date" id="dob" class="form-control" name="trip-start" value="1999-10-19" min="2018-01-01"
+                            max="2025-12-31">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"><br>  
+                        <input type="text" id="city" class="form-control form-control-lg mb-4" placeholder="city" />
+                    </div>
+                    <div class="col-md-4 "><br>
+                        <input type="text" id="state" class="form-control form-control-lg mb-3" placeholder="state" />
+                    </div>
+                    <div class="col-md-4"><br>
+                        <input type="text" id="country" class="form-control form-control-lg mb-3" placeholder="country" />
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <select class="form-control"  id="selectlanguage" aria-label="Default select example">
+                        <option selected value="">Select your Language</option>
+                        <option value="1">Tamil</option>
+                        <option value="2">English</option>
+                        <option value="3">Hindi</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control" id="selectblood" aria-label="Default select example">
+
+                        <option selected value="">Select your bloodgroup</option>
+                        <option value="o">O<sup>-</sup></option>
+                        <option value="A">A<sup>-</sup></option>
+                        <option value="B">B<sup>+</sup></option>
+                    </select>
+                </div>
+            </div><br>
+            <button type="button" class="btn btn-primary float-left mb-1.0 button ms-3.0"> 
+                <a class="text-white nav-link "id="submit" href="">submit</a></button>
+                <button type="button" id="Submit" class="btn btn-primary float-end mb-10 button ms-13">
+                    <a class="text-white nav-link" id="cancel" href="">cancel</a>
+                </button>
+                   
+    
+     
+    </section>
+    <div class="d-flex flex-column mb-0 px-2 py-4 px-xl-5 bg-light fixed-bottom">
+        <div class="text-black text-center mb-md-0">
+            Copyright © 2022. All rights reserved.
+        </div>
+    </div>
+    <script src="/Javascript/createteachers.js"></script>
+</body>
+
+</html> 

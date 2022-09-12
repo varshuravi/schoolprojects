@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand img{
+height: 20px;
+}
+.card-img-top{
+    height: 230px;
+}
+.nav-link{
+    color:none;
+}
+.active{
+    color:rgb(201, 35, 151);
+    font-weight: bold;
+    
+}
+.container-fluid{
+    margin-top: 3px;
+}

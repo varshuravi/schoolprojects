@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand img{
+height: 40px;
+}
+.active{
+    color: blue;
+    font-weight: bold;
+    border-bottom: 3px solid blue;
+}
+.navbar{
+    border-bottom: 1px solid lightgray;
+}
+.footer{
+    border-top: 1px solid lightgray;
+}
+.error{
+    color: red;
+}
+@media (min-width: 320px) and (max-width: 490px) { 
+
+  #fullName,#email,#age,#job,#education,#homecontactNumber,#address,#radio,#checkbox-content{
+    margin-bottom: 25px;
+  }
+}
